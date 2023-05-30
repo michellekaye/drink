@@ -22,8 +22,9 @@ function Category() {
 	};
 
 	useEffect(() => {
+		const query = categoryId.split("-").join("/");
 		setSelectedCategory(categoryId);
-		getCocktails(categoryId);
+		getCocktails(query);
 	}, []);
 
 	const handleCocktailClick = (drinkId) => {
