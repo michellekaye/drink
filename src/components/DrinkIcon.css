@@ -1,0 +1,22 @@
+.drink-icon {
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	background: #e2ece7;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 1rem;
+	overflow: hidden;
+}
+
+.drink-icon__img {
+	height: 50%;
+	transform: rotate(-10deg);
+}
+
+.drink-icon__thumb {
+	height: 100%;
+	transform: none;
+}

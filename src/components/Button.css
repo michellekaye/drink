@@ -1,0 +1,36 @@
+.button {
+	border: none;
+	background: #fff;
+	border-radius: 0.5rem;
+	color: #514361;
+	cursor: pointer;
+	margin: 0.5rem 0;
+	padding: 0.5rem 1rem;
+	transition: all 0.2s ease-in-out;
+	text-align: left;
+	width: 100%;
+}
+
+.button:nth-child(1n) .drink-icon {
+	background: #ffe8e7;
+}
+
+.button:nth-child(2n) .drink-icon {
+	background: #e2ece7;
+}
+
+.button:nth-child(3n) .drink-icon {
+	background: #fef6d8;
+}
+
+.button:hover {
+	background: #fff;
+	box-shadow: 0px 3px 40px -13px rgb(81, 67, 97, 0.5);
+}
+
+.button__label {
+	font-size: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}

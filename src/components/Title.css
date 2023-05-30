@@ -1,0 +1,25 @@
+.title {
+	color: #514361;
+	margin: 0;
+	padding: 2rem 2rem 0;
+}
+
+.title__h1 {
+	margin: 0 0 1rem 0;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.title__h2 {
+	font-size: 3rem;
+	font-weight: 500;
+	font-family: "Calistoga";
+	line-height: 1;
+	margin: 0;
+}
+
+.title__back {
+	font-size: 1.5rem;
+	display: inline-block;
+	color: #514361;
+}
