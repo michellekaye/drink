@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 
 const FILTER_BY_CATEGORY_URL =
@@ -10,6 +10,7 @@ function Category() {
 	const [cocktails, setCocktails] = useState([]);
 	const [selectedCategory, setSelectedCategory] = useState("");
 	const { categoryId } = useParams();
+	const navigate = useNavigate();
 
 	const getCocktails = async (param) => {
 		try {
@@ -25,6 +26,10 @@ function Category() {
 		getCocktails(categoryId);
 	}, []);
 
+	const handleCocktailClick = (drinkId) => {
+		navigate(`/drinks/${drinkId}`);
+	};
+
 	return (
 		<>
 			{cocktails && cocktails.length > 0 && (
@@ -33,7 +38,7 @@ function Category() {
 						return (
 							<Button
 								key={cocktail.idDrink}
-								onClick={() => console.log(cocktail)}
+								onClick={() => handleCocktailClick(cocktail.idDrink)}
 								label={cocktail.strDrink}
 								thumb={cocktail.strDrinkThumb}
 							/>

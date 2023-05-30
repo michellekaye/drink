@@ -43,3 +43,16 @@ body {
 .button-list {
 	padding: 2rem;
 }
+
+.instructions {
+	padding: 2rem;
+}
+
+.drink-image {
+	position: relative;
+	z-index: -1;
+	width: 80%;
+	margin: 1rem auto 0;
+	border-radius: 100%;
+	display: block;
+}

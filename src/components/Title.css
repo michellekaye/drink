@@ -18,8 +18,19 @@
 	margin: 0;
 }
 
+.title__h3 {
+	font-size: 2rem;
+	font-weight: 500;
+	font-family: "Calistoga";
+	line-height: 1;
+	margin: 0;
+}
+
 .title__back {
 	font-size: 1.5rem;
 	display: inline-block;
 	color: #514361;
+	background: none;
+	border: none;
+	cursor: pointer;
 }
