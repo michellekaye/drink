@@ -11,7 +11,7 @@ const Title = ({ category, drinkTitle }) => {
 	return (
 		<div className="title">
 			{(category || drinkTitle) && (
-				<button className="title__back" onClick={() => goBack()} replace={true}>
+				<button className="title__back" onClick={() => goBack()}>
 					<HiOutlineArrowLeft />
 				</button>
 			)}

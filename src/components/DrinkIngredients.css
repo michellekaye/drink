@@ -1,0 +1,9 @@
+.ingredient {
+	font-size: 0.8rem;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.ingredient__measure {
+	margin-right: 2px;
+}
